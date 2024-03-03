@@ -7,7 +7,7 @@ const Contacts = ({ contacts, deleteRecord }) => {
       <ul className={css.contactList}>
         {contacts.map(({ id, name, number }) => (
           <li className={css.item} key={id}>
-            <span className={css.contact}>
+            <span>
                     {name}: {number}                    
             </span>
             <button className={css.btn} onClick={() => deleteRecord(id)}>Delete</button>
